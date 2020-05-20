@@ -1,13 +1,9 @@
 language: c
-group: travis_latest
 
 addons:
   apt:
     packages:
     - octave
-
-before_script:
-- octave-cli --eval "addpath('mydirectory');savepath"      #Adding and saving the subdirectory to Octave path
 
 script:
 - octave-cli Zadanie1.m                                  # Running a MATLAB/Octave script in root
